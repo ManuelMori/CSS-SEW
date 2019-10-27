@@ -1,7 +1,7 @@
 /** Especificidad: 001 **/
 body {
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.3fr 0.7fr;
     grid-template-areas: 
         "encabezado encabezado" 
         "nav contenido" 
