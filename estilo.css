@@ -129,15 +129,15 @@ tr:nth-child(odd) {
     background-color: #aad1f0;
 }
 
-/** Especificidad: 003 **/
-footer ul li {
+/** Especificidad: 004 **/
+footer ul li a{
     font: 1em "Georgia", serif;
     color: white;
 }
 
 /** Especificidad: 014 **/
 footer ul li a:visited{
-    color: whitesmoke;
+    color: white;
 }
 
 /** Especificidad: 014 **/
