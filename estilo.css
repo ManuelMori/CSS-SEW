@@ -13,7 +13,6 @@ body {
 header {
     font: 2.4em arial, sans-serif;
     color: #eee;
-    margin: 16px;
     text-align: center;
     border-radius: 8px;
     grid-area: encabezado;
@@ -87,7 +86,6 @@ blockquote{
 footer{
     grid-area: pie;
     background: #064579;
-    margin: 16px;
     padding: 16px;
     border-radius: 8px;
 }
