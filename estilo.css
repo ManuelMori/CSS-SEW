@@ -11,7 +11,7 @@ body {
 
 /** Especificidad: 001 **/
 header {
-    font: 2.8em arial, sans-serif;
+    font: 2.4em arial, sans-serif;
     color: #eee;
     text-align: center;
     grid-area: encabezado;
