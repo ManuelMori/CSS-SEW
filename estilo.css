@@ -13,10 +13,12 @@ body {
 header {
     font: 2.4em arial, sans-serif;
     color: #eee;
+    margin: 16px;
     text-align: center;
+    border-radius: 8px;
     grid-area: encabezado;
     background: #064579;
-    border-radius: 8px;
+    
 
 }
 
@@ -31,8 +33,8 @@ nav ul {
     padding: 0;
     list-style-type: none;
     background: #eee;
-    border-radius: 8px;
     text-align: center;
+    border-radius: 8px;
 
 }
 
@@ -87,9 +89,8 @@ footer{
     grid-area: pie;
     background: #064579;
     margin: 16px;
-    border-radius: 8px;
     padding: 16px;
-    
+    border-radius: 8px;
 }
 
 /** Especificidad: 002 **/
