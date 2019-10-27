@@ -23,12 +23,13 @@ header {
 /** Especificidad: 001 **/
 nav {
     grid-area: nav;
+    padding: 16px;
 }
 
 /** Especificidad: 002 **/
 nav ul {
+    padding: 0;
     list-style-type: none;
-    padding: 16px;
     background: #eee;
     border-radius: 8px;
     text-align: center;
@@ -41,6 +42,7 @@ nav ul li a{
     color: #2196F3;
     text-decoration: none;
     display: block;
+    
 }
 
 /** Especificidad: 014 **/
