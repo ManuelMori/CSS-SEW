@@ -52,7 +52,6 @@ nav ul li a:hover{
 /** Especificidad: 001 **/
 main{
     grid-area: contenido;
-    padding: 16px;
     background: #eee;
     border-radius: 8px;
 }
@@ -84,7 +83,6 @@ blockquote{
 footer{
     grid-area: pie;
     background: #064579;
-    padding: 16px;
     border-radius: 8px;
 }
 
@@ -145,7 +143,6 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 16px;
 }
 
 /** Especificidad: 001 **/
@@ -160,7 +157,6 @@ video {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px){
