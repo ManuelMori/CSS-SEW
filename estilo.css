@@ -1,13 +1,182 @@
+/** Especificidad: 001 **/
 body {
-      font: 400 15px Tahoma, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-      background-color: #f6f6f6;
-  }
-h1 {
-      background-color:#FF5733; 
-      color: #fff;
-      text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;     
-  }
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: 
+        "encabezado encabezado" 
+        "nav contenido" 
+        "pie pie";
+    background: #F8F8F8;
+}
+
+/** Especificidad: 001 **/
+header {
+    font: 2.8em arial, sans-serif;
+    color: #eee;
+    text-align: center;
+    grid-area: encabezado;
+    background: #064579;
+    border-radius: 8px;
+
+}
+
+/** Especificidad: 001 **/
+nav {
+    grid-area: nav;
+}
+
+/** Especificidad: 002 **/
+nav ul {
+    list-style-type: none;
+    padding: 16px;
+    margin: 16px 0px 0px 16px;
+    background: #eee;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+/** Especificidad: 004 **/
+nav ul li a{
+    font: 1.5em arial, sans-serif;
+    color: #2196F3;
+    text-decoration: none;
+    display: block;
+}
+
+/** Especificidad: 014 **/
+nav ul li a:hover{
+    color: #064579;
+}
+
+/** Especificidad: 001 **/
+main{
+    grid-area: contenido;
+    margin: 16px;
+    padding: 0px 16px;
+    background: #eee;
+    border-radius: 8px;
+}
+
+/** Especificidad: 002 **/
+main h2 {
+    font: 2.5em arial, sans-serif;
+    color: #064579;
+    text-align: center;
+    padding: 8px 16px;
+    background: #aad1f0;
+    border-radius: 8px;
+}
+
+/** Especificidad: 002 **/
+main p {
+    font: 1em "Georgia", serif;
+    color: #032642;
+}
+
+/** Especificidad: 001 **/
+blockquote{
+    font: 1em "Georgia", serif;
+    color: #032672;
+    font-style: italic;
+}
+
+/** Especificidad: 001 **/
+footer{
+    grid-area: pie;
+    background: #064579;
+    margin: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    
+}
+
+/** Especificidad: 002 **/
+footer p { 
+    font: 1.5em arial, sans-serif;
+    color: #2196F3;
+}
+
+/** Especificidad: 002 **/
+footer ul{
+    list-style-type: square;
+}
+
+/** Especificidad: 001 **/
+table{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+}
+
+/** Especificidad: 001 **/
+th{
+    background-color: #2196F3; 
+    font: 1em arial, sans-serif;
+    font-weight: bold;
+}
+
+/** Especificidad: 001 **/
+td{
+    font: 1em arial, sans-serif;
+    text-align: center;
+}
+
+/** Especificidad: 011 **/
+tr:nth-child(odd) {
+    background-color: #aad1f0;
+}
+
+/** Especificidad: 003 **/
+footer ul li {
+    font: 1em "Georgia", serif;
+    color: white;
+}
+
+/** Especificidad: 014 **/
+footer ul li a:visited{
+    color: whitesmoke;
+}
+
+/** Especificidad: 014 **/
+footer ul li a:hover{
+    background: #aad1f0;
+}
+
+/** Especificidad: 001 **/
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 16px;
+}
+
+/** Especificidad: 001 **/
+figcaption {
+    font: 1em "Georgia", serif;
+    font-style: italic;
+    color: darkblue;
+}
+
+/** Especificidad: 001 **/
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px){
+    /** Especificidad: 001 **/
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "encabezado" 
+            "nav" 
+            "contenido"
+            "pie";
+        background: #F8F8F8;
+    }
+}
+
