@@ -41,7 +41,7 @@ nav ul {
 /** Especificidad: 004 **/
 nav ul li a{
     font: 1.5em arial, sans-serif;
-    color: #2196F3;
+    color: #004f8d;
     text-decoration: none;
     display: block;
     
@@ -49,7 +49,7 @@ nav ul li a{
 
 /** Especificidad: 014 **/
 nav ul li a:hover{
-    color: #064579;
+    color: #00233e;
 }
 
 /** Especificidad: 001 **/
@@ -129,7 +129,7 @@ tr:nth-child(odd) {
     background-color: #aad1f0;
 }
 
-/** Especificidad: 004 **/
+/** Especificidad: 003 **/
 footer ul li a{
     font: 1em "Georgia", serif;
     color: white;
